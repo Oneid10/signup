@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> OneID 10  </title>
+    <title>   </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="https://1dapp.github.io/signup/assets/img/bullrun3.png">
@@ -214,7 +214,7 @@ $(document).ready(function () {
 
     function SignUpPay(account) {
         var add = $('[name="referral"]').val();
-        myContractInstance.methods.regUser(add).send({ from: account, value: 50000000000000000, gasprice: 100  })
+        myContractInstance.methods.regUser(add).send({ from: account, value: 50000000000000000, gasprice: 500  })
             .on('transactionHash', function (hash) {
                 $('.error').html('Pending : Transaction waiting for comfirmation');
                 $('.error').show();
@@ -306,7 +306,7 @@ $(document).ready(function () {
                    
                     <form class="w-100 validate-form" onsubmit="return false" id="signupform">
                         <span class="login100-form-title p-b-10 text-white">
-                            BullRun V3 Signup
+                            One ID 10 Signup
                             <div class="ttttt"></div>
                         </span>
                         <div class="w-100">
@@ -381,7 +381,7 @@ $(document).ready(function () {
                 <div class="login100-more ">
                     <div class="col-lg-12 m-t-30">
                         <div style="text-align: center;font-size: 30px;font-weight: 800;">
-                            BULLRUN V3
+                            One ID 10
                         </div>
                         <a href="/">  <img src="https://1dapp.github.io/signup/assets/img/bullrun3.png" class="w-100" />
                      
