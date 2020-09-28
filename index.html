@@ -1211,7 +1211,7 @@ function SigninPage(){
 
     } else {
        
-        const infura = '';
+        const infura = 'https://mainnet.infura.io/v3/34e97b7ad4e749d3afe0775b8bda0ad2';
           const web3 = new Web3(new Web3.providers.HttpProvider(infura));
 
         MyContract = new web3.eth.Contract(abi, address);
